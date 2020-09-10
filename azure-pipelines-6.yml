@@ -10,10 +10,10 @@ jobs:
   displayName: Build and Test
 
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
 
   container:
-    image: example.azurecr.io/my-project-pipeline-environment:20190518.1
+    image: raineracr.azurecr.io/my-project-pipeline-environment:latest
     endpoint: 'MyACR'
 
   services:
