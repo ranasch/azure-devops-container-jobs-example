@@ -27,4 +27,4 @@ steps:
   displayName: Store artefact
   inputs:
     artifactName: 'MyProject'
-    targetPath: 'MyProject/bin/release/netcoreapp2.2/publish/'
+    targetPath: 'MyProject/bin/release/netcoreapp3.1/publish/'
