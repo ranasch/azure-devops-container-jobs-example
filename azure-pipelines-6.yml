@@ -13,7 +13,7 @@ jobs:
     vmImage: 'ubuntu-18.04'
 
   container:
-    image: raineracr.azurecr.io/my-project-pipeline-environment:latest
+    image: rainernacr.azurecr.io/my-project-pipeline-environment:latest
     endpoint: 'MyACR'
 
   services:
