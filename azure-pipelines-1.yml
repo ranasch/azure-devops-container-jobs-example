@@ -1,5 +1,5 @@
 pool:
-  vmImage: 'ubuntu-18.04'
+  name: 'zfdemo'
 
 container: mcr.microsoft.com/dotnet/core/sdk:3.1
 
