@@ -93,8 +93,8 @@ jobs:
       tags: $(Build.BuildNumber)
 
   - task: AzureCLI@2
-  inputs:
-    azureSubscription: 'Microsoft Azure Internal Consumption (86a210e0-3877-4587-8ac4-9b5fa848fb0e)'
-    scriptType: 'pscore'
-    scriptLocation: 'inlineScript'
-    inlineScript: 'az container create –resource-group zfaci-rg –name aci-myproject-app –image zfdemoregistry.azurecr.io/myproject:latest –cpu 1 –memory 1 –registry-login-server zfdemoregistry.azurecr.io –registry-username zfdemoregistry –registry-password $(acrPassword) –dns-name-label aci-myproject-app –ports 8080'
+    inputs:
+      azureSubscription: 'Microsoft Azure Internal Consumption (86a210e0-3877-4587-8ac4-9b5fa848fb0e)'
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
+      inlineScript: 'az container create –resource-group zfaci-rg –name aci-myproject-app –image zfdemoregistry.azurecr.io/myproject:latest –cpu 1 –memory 1 –registry-login-server zfdemoregistry.azurecr.io –registry-username zfdemoregistry –registry-password $(acrPassword) –dns-name-label aci-myproject-app –ports 8080'
