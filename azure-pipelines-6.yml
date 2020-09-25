@@ -97,4 +97,4 @@ jobs:
       azureSubscription: 'Microsoft Azure Internal Consumption (86a210e0-3877-4587-8ac4-9b5fa848fb0e)'
       scriptType: 'pscore'
       scriptLocation: 'inlineScript'
-      inlineScript: 'az container create –resource-group zfaci-rg –name aci-myproject-app –image zfdemoregistry.azurecr.io/myproject:latest –cpu 1 –memory 1 –registry-login-server zfdemoregistry.azurecr.io –registry-username zfdemoregistry –registry-password $(acrPassword) –dns-name-label aci-myproject-app –ports 8080'
+      inlineScript: 'az container create -g zfaci --name myprojectapp --image myproject:$(Build.BuildNumber) --cpu 1 --memory 1'
